@@ -15,10 +15,10 @@ void swap(int &n1, int &n2, int &n3){
     swap(n1, n3);
 }
 void swap(int &na, int &nb, int &nc, int &nd){
-    swap(na, nb);
+    swap(na, nb, nc);
+    swap(nb, nc, nd);
+    swap(nc, nd, na);
     swap(nb, nc);
-    swap(nc, nd);
-    swap(nd, na);
 }
 
 

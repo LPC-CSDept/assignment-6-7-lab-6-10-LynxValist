@@ -21,10 +21,10 @@ TEST_CASE("Test1 ", "[Swap two values]")
 	REQUIRE(n1 == 10);
 	REQUIRE(n2 == 20);
 	REQUIRE(n3 == 30);
-	n1 = 10;
-	n2 = 20;
-	n3 = 30;
-	n4 = 40;
+	n1 = 10;//30    20
+	n2 = 20;//10 40
+	n3 = 30;//20 10 30
+	n4 = 40;//   20 10
 	swap(n1, n2, n3, n4);
 	REQUIRE(n1 == 20);
 	REQUIRE(n2 == 30);
